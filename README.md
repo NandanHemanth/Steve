@@ -14,9 +14,14 @@ Steve is an advanced, AI-powered educational platform designed to provide a high
 - Features dynamic, data-rich visualizations (graphs and charts) for Attention, Stress, Engagement, ADHD Risk, Visual Strain, and Cognitive Load.
 - Provides actionable, personalized recommendations for optimizing the learning experience based on the session's data.
 
-### 3. Interactive Learning Environment
-- **Course & Module Management**: A sleek, modern frontend built with React and TailwindCSS for seamless course navigation and learning.
-- **Smart Learning Paths**: Integrates with educational content to provide structured, chapter-based learning.
+### 3. Career Fit & Skill Bridge (Intelligent Career Matching)
+- **JD vs. Resume Deep Scan**: Performs an exhaustive comparison between a user's PDF resume and a Job Description, generating a comprehensive 'Fit Score'.
+- **Exhaustive Requirement Extraction**: Identifies hard skills, soft skills, leadership requirements, and experience thresholds.
+- **Automated Skill Bridge**: One-click redirection from identified skill gaps to the AI Course Builder. It automatically populates the course title, subject, and syllabus prompt with the exact context needed to close the professional gap.
+
+### 4. AI-Powered Course Builder
+- **Dynamic Curriculum Generation**: Uses LLMs to generate structured, multi-chapter courses on any subject in seconds.
+- **Context-Aware Learning**: When bridged from the Career Fit page, the builder tunes the curriculum to specific industry requirements.
 
 ## 🛠️ Technology Stack
 
@@ -28,9 +33,11 @@ Steve is an advanced, AI-powered educational platform designed to provide a high
 
 **Backend / AI Engine:**
 - Python (Flask for the API server)
+- Groq Cloud SDK (Llama 3 / Mixtral for high-speed analysis and course generation)
 - OpenCV (Computer Vision)
 - MediaPipe (Face mesh and landmark detection)
 - DeepFace (Emotion recognition)
+- PDF.js (Client-side resume parsing and text extraction)
 - ReportLab & Matplotlib (PDF report generation and data visualization)
 - Pandas & NumPy (Data processing)
 
