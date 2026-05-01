@@ -65,7 +65,7 @@ npm run dev
 1. **Start a Chapter**: Navigate to any course chapter in the web app.
 2. **Enable AI Tracking**: Click the **"AI Track Session"** toggle. Ensure camera permissions are granted.
 3. **Learn**: Proceed with your study session while the AI intelligently monitors your engagement and accessibility metrics in the background.
-4. **Generate Report**: Once finished, click **"Stop Tracking"**. The system will automatically compile your session data, generate a comprehensive PDF analytics report, and download it to your device.
+4. **Generate Report**: Once finished, click **"Stop Tracking"**. The system will automatically compile your session data, generate a comprehensive PDF analytics report and download it to your device.
 
 ## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
