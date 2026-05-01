@@ -9,8 +9,8 @@ const NAV_ITEMS = [
   { to: "/app/dashboard", icon: LayoutDashboard, label: "Dashboard" },
   { to: "/app/courses/new", icon: BookOpen, label: "AI Tutor" },
   { to: "/app/academic", icon: GraduationCap, label: "Course Planner" },
-  { to: "/app/profile", icon: User, label: "My Profile" },
   { to: "/app/career-fit", icon: Target, label: "Career Fit" },
+  { to: "/app/profile", icon: User, label: "My Profile" },
   { to: "/app/settings", icon: Settings, label: "Settings" }
 ] as const;
 
@@ -58,7 +58,7 @@ export function AppLayout() {
 
         {/* Center quick-access pill nav */}
         <nav className="hidden items-center gap-1 md:flex">
-          {NAV_ITEMS.slice(0, 3).map(({ to, label, icon: Icon }) => (
+          {NAV_ITEMS.slice(0, 4).map(({ to, label, icon: Icon }) => (
             <NavLink
               key={to}
               to={to}
