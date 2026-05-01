@@ -1,9 +1,11 @@
-# 🎓 Steve - Adaptive AI Learning Platform
+Here's the updated README with a branch switching section added under Getting Started:
 
+---
+
+# 🎓 Steve - Adaptive AI Learning Platform
 Steve is an advanced, AI-powered educational platform designed to provide a highly personalized and adaptive learning experience. By integrating real-time computer vision and machine learning, Steve monitors student engagement, cognitive load, and accessibility needs, ensuring that every learner receives the support they need to succeed.
 
 ## 🌟 Key Features
-
 ### 1. Real-Time Accessibility Intelligence (AI Track)
 - **Emotion & Engagement Tracking**: Utilizes `DeepFace` and `MediaPipe` to analyze facial expressions and head poses, determining the student's emotional state, attention span, and overall engagement level.
 - **Stress & Cognitive Load Monitoring**: Identifies indicators of high stress or cognitive overload, providing real-time insights and adaptive recommendations.
@@ -19,7 +21,6 @@ Steve is an advanced, AI-powered educational platform designed to provide a high
 - **Smart Learning Paths**: Integrates with educational content to provide structured, chapter-based learning.
 
 ## 🛠️ Technology Stack
-
 **Frontend:**
 - React (Vite)
 - TypeScript
@@ -35,6 +36,23 @@ Steve is an advanced, AI-powered educational platform designed to provide a high
 - Pandas & NumPy (Data processing)
 
 ## 🚀 Getting Started
+
+### 0. Switch to the Steve Branch
+All active development lives on the `Steve` branch. After cloning the repository, switch to it before running anything:
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+git checkout Steve
+```
+
+To verify you are on the correct branch:
+
+```bash
+git branch
+```
+
+You should see `* Steve` highlighted in the output.
 
 ### Prerequisites
 - Node.js & npm (for frontend)
@@ -61,7 +79,6 @@ npm run dev
 ```
 
 ## 📈 How It Works
-
 1. **Start a Chapter**: Navigate to any course chapter in the web app.
 2. **Enable AI Tracking**: Click the **"AI Track Session"** toggle. Ensure camera permissions are granted.
 3. **Learn**: Proceed with your study session while the AI intelligently monitors your engagement and accessibility metrics in the background.
