@@ -1,0 +1,72 @@
+{
+  "summary": "This is a test document about learning and education. It covers key concepts, provides examples, and helps students understand important topics through interactive content.",
+  "roadmap": {
+    "sections": [
+      {
+        "title": "Introduction to Learning",
+        "type": "flashcard",
+        "content": "Learning is the process of acquiring knowledge and skills through study, experience, or being taught.",
+        "data": {
+          "flashcards": [
+            {
+              "front": "What is learning?",
+              "back": "Learning is the process of acquiring knowledge and skills through study, experience, or being taught."
+            },
+            {
+              "front": "What are the main types of learning?",
+              "back": "Visual, auditory, kinesthetic, and reading/writing learning styles."
+            }
+          ]
+        }
+      },
+      {
+        "title": "Memory and Retention",
+        "type": "flashcard",
+        "content": "Memory is the ability to store and retrieve information. Good retention requires practice and repetition.",
+        "data": {
+          "flashcards": [
+            {
+              "front": "How can you improve memory retention?",
+              "back": "Through spaced repetition, active recall, and connecting new information to existing knowledge."
+            }
+          ]
+        }
+      },
+      {
+        "title": "Knowledge Assessment",
+        "type": "quiz",
+        "content": "Test your understanding of learning concepts.",
+        "data": {
+          "questions": [
+            {
+              "question": "What is the most effective way to learn new information?",
+              "options": [
+                "Passive reading",
+                "Active practice and repetition",
+                "Memorizing without understanding",
+                "Cramming before tests"
+              ],
+              "correct": 1
+            },
+            {
+              "question": "Which learning style involves hands-on activities?",
+              "options": [
+                "Visual",
+                "Auditory",
+                "Kinesthetic",
+                "Reading/Writing"
+              ],
+              "correct": 2
+            }
+          ]
+        }
+      },
+      {
+        "title": "Complete Your Learning Journey",
+        "type": "goal",
+        "content": "Congratulations! You've completed all the learning modules. Now explain what you've learned.",
+        "data": {}
+      }
+    ]
+  }
+}
