@@ -4,7 +4,8 @@ export const storageKeys = {
   aiProvider: "steve.aiProvider",
   profile: "steve.profile",
   coursePlanner: "steve.coursePlanner",
-  aiCoursePlan: "steve.aiCoursePlan"
+  aiCoursePlan: "steve.aiCoursePlan",
+  careerFit: "steve.careerFit"
 } as const;
 
 export function loadJson<T>(key: string, fallback: T): T {

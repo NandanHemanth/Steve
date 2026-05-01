@@ -1,9 +1,10 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Upload, FileText, Target, AlertTriangle, Lightbulb, ChevronRight, CheckCircle2, ArrowRight, Loader2, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import * as pdfjsLib from "pdfjs-dist";
 import { chatJson } from "../lib/groqClient";
+import { loadJson, saveJson, storageKeys } from "../lib/storage";
 
 // Worker is copied to /public so it's served at the root path - reliable for Vite
 pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
@@ -24,12 +25,21 @@ interface AnalysisResult {
 
 export function CareerFitPage() {
   const navigate = useNavigate();
-  const [jdText, setJdText] = useState("");
-  const [resumeText, setResumeText] = useState("");
-  const [resumeName, setResumeName] = useState("");
+
+  // Load persisted state
+  const saved = loadJson<any>(storageKeys.careerFit, {});
+
+  const [jdText, setJdText] = useState(saved.jdText || "");
+  const [resumeText, setResumeText] = useState(saved.resumeText || "");
+  const [resumeName, setResumeName] = useState(saved.resumeName || "");
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [result, setResult] = useState<AnalysisResult | null>(null);
+  const [result, setResult] = useState<AnalysisResult | null>(saved.result || null);
   const [error, setError] = useState("");
+
+  // Persist state on change
+  useEffect(() => {
+    saveJson(storageKeys.careerFit, { jdText, resumeText, resumeName, result });
+  }, [jdText, resumeText, resumeName, result]);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
 
