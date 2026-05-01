@@ -101,33 +101,36 @@ export function LandingPage() {
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="flex flex-col items-center text-center">
-            {/* Minimalist Logo Entry */}
+            {/* Prominent Logo Entry */}
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="mb-8"
+              className="mb-10"
             >
-              <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white shadow-xl shadow-blue-500/10 border border-slate-100 p-3">
-                <SteveLogo variant="compact" className="h-full w-full" />
+              <div className="relative group">
+                <div className="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full scale-150 group-hover:scale-[2] transition-transform duration-700" />
+                <div className="relative inline-flex items-center justify-center rounded-[2rem] bg-white shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] border border-slate-100 p-6 sm:p-8">
+                  <SteveLogo variant="default" className="h-16 sm:h-24 lg:h-32 w-auto" />
+                </div>
               </div>
             </motion.div>
 
             {/* Feature Pill */}
             <motion.div
               {...fadeUp(0.1)}
-              className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/50 px-4 py-1.5 text-[11px] font-bold text-[#0056D2] uppercase tracking-[0.1em] mb-8"
+              className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-5 py-2 text-[12px] font-bold text-[#0056D2] uppercase tracking-[0.15em] mb-10 shadow-sm"
             >
-              <Sparkles className="h-3.5 w-3.5" />
+              <Sparkles className="h-4 w-4" />
               Revolutionizing Student Success
             </motion.div>
             
             {/* High-Impact Headline */}
             <motion.h1 
               {...fadeUp(0.2)}
-              className="text-4xl font-[900] tracking-tight text-slate-900 sm:text-6xl lg:text-7xl xl:text-8xl leading-[1.1] max-w-[12ch] sm:max-w-[15ch] mx-auto"
+              className="text-5xl font-[900] tracking-tight text-slate-900 sm:text-7xl lg:text-8xl xl:text-[7.5rem] leading-[1] max-w-[15ch] mx-auto"
             >
-              The AI Operating System <br />
+              The AI Operating System <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0056D2] via-[#4F46E5] to-[#8B5CF6]">
                 for Every Student.
               </span>
