@@ -99,66 +99,106 @@ export function LandingPage() {
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]" />
         </div>
 
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="text-left order-2 lg:order-1">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+          {/* Floating Feature Badges for Desktop */}
+          <div className="hidden xl:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 space-y-6">
+            {[
+              { icon: Target, text: "JD Matching", color: "text-indigo-600", bg: "bg-indigo-50" },
+              { icon: Eye, text: "Focus Tracking", color: "text-emerald-600", bg: "bg-emerald-50" }
+            ].map((badge, i) => (
               <motion.div
-                {...fadeUp(0)}
-                className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/50 px-4 py-1.5 text-xs font-bold text-[#0056D2] uppercase tracking-wider mb-8"
+                key={badge.text}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.8 + i * 0.2 }}
+                className={`flex items-center gap-3 px-5 py-3 rounded-2xl border border-white bg-white/80 backdrop-blur shadow-xl shadow-slate-200/50`}
               >
-                <Sparkles className="h-3.5 w-3.5" />
-                Revolutionizing Student Success
+                <div className={`p-2 rounded-xl ${badge.bg} ${badge.color}`}>
+                  <badge.icon className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-slate-800 whitespace-nowrap">{badge.text}</span>
               </motion.div>
-              
-              <motion.h1 
-                {...fadeUp(0.1)}
-                className="text-5xl font-[900] tracking-tight text-slate-900 sm:text-7xl lg:text-[5.5rem] leading-[1.05]"
-              >
-                The AI Operating System <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0056D2] via-[#4F46E5] to-[#8B5CF6]">
-                  for Every Stevens Student.
-                </span>
-              </motion.h1>
-              
-              <motion.p 
-                {...fadeUp(0.2)}
-                className="mt-8 max-w-2xl text-xl leading-relaxed text-slate-600"
-              >
-                STEVE isn't just a tutor. It's a career-matching, course-planning, and emotion-aware 
-                intelligence suite built specifically for the Stevens Institute of Technology.
-              </motion.p>
+            ))}
+          </div>
 
-              <motion.div 
-                {...fadeUp(0.3)}
-                className="mt-12 flex flex-wrap items-center gap-5"
-              >
-                <Link
-                  to="/login"
-                  className="group relative inline-flex items-center gap-3 rounded-full bg-slate-900 px-8 py-4 text-lg font-bold text-white transition-all hover:bg-black hover:scale-105 active:scale-95 shadow-xl shadow-slate-900/20"
-                >
-                  Launch Steve 🚀
-                  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Link>
-                <Link
-                  to="/app/dashboard"
-                  className="inline-flex items-center gap-3 rounded-full border-2 border-slate-200 bg-white px-8 py-4 text-lg font-bold text-slate-900 transition-all hover:border-slate-900 hover:bg-slate-50"
-                >
-                  Explore the Hub
-                </Link>
-              </motion.div>
-            </div>
-
-            <div className="flex justify-center lg:justify-end order-1 lg:order-2 mb-12 lg:mb-0">
+          <div className="hidden xl:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 space-y-6">
+            {[
+              { icon: BrainCircuit, text: "AI Tutoring", color: "text-blue-600", bg: "bg-blue-50" },
+              { icon: ShieldCheck, text: "Local Privacy", color: "text-rose-600", bg: "bg-rose-50" }
+            ].map((badge, i) => (
               <motion.div
-                initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-                animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="relative"
+                key={badge.text}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 1 + i * 0.2 }}
+                className={`flex items-center gap-3 px-5 py-3 rounded-2xl border border-white bg-white/80 backdrop-blur shadow-xl shadow-slate-200/50`}
               >
-                <div className="absolute inset-0 -m-20 rounded-full bg-blue-400/10 blur-[120px] animate-pulse" />
-                <SteveLogo variant="hero" className="relative drop-shadow-[0_32px_64px_rgba(0,86,210,0.25)] scale-[1.2] sm:scale-[1.5] lg:scale-[1.9] xl:scale-[2.1] transition-transform duration-500 hover:scale-[2.2]" />
+                <div className={`p-2 rounded-xl ${badge.bg} ${badge.color}`}>
+                  <badge.icon className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-slate-800 whitespace-nowrap">{badge.text}</span>
               </motion.div>
-            </div>
+            ))}
+          </div>
+
+          <div className="text-center relative z-10">
+            {/* Center Logo with massive glow */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="relative inline-block mb-10"
+            >
+              <div className="absolute inset-0 -m-12 rounded-full bg-blue-500/10 blur-[80px] animate-pulse" />
+              <div className="relative bg-white p-6 rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border border-slate-100">
+                <SteveLogo variant="hero" className="h-20 sm:h-28 lg:h-32 drop-shadow-sm" />
+              </div>
+            </motion.div>
+
+            <motion.div
+              {...fadeUp(0.1)}
+              className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/50 px-4 py-1.5 text-xs font-bold text-[#0056D2] uppercase tracking-wider mb-8"
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+              Revolutionizing Student Success
+            </motion.div>
+            
+            <motion.h1 
+              {...fadeUp(0.2)}
+              className="text-5xl font-[900] tracking-tight text-slate-900 sm:text-7xl lg:text-[6rem] leading-[1.02]"
+            >
+              The AI Operating System <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0056D2] via-[#4F46E5] to-[#8B5CF6]">
+                for Every Stevens Student.
+              </span>
+            </motion.h1>
+            
+            <motion.p 
+              {...fadeUp(0.3)}
+              className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-slate-600"
+            >
+              STEVE isn't just a tutor. It's a career-matching, course-planning, and emotion-aware 
+              intelligence suite built specifically for the Stevens Institute of Technology.
+            </motion.p>
+
+            <motion.div 
+              {...fadeUp(0.4)}
+              className="mt-12 flex flex-wrap items-center justify-center gap-5"
+            >
+              <Link
+                to="/login"
+                className="group relative inline-flex items-center gap-4 rounded-full bg-slate-900 px-10 py-5 text-xl font-bold text-white transition-all hover:bg-black hover:scale-105 active:scale-95 shadow-2xl shadow-slate-900/20"
+              >
+                Launch Steve 🚀
+                <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
+              </Link>
+              <Link
+                to="/app/dashboard"
+                className="inline-flex items-center gap-4 rounded-full border-2 border-slate-200 bg-white px-10 py-5 text-xl font-bold text-slate-900 transition-all hover:border-slate-900 hover:bg-slate-50"
+              >
+                Explore the Hub
+              </Link>
+            </motion.div>
           </div>
 
           {/* Large Dashboard Mockup */}
