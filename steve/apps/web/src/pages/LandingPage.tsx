@@ -204,7 +204,7 @@ export function LandingPage() {
                 </motion.div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
