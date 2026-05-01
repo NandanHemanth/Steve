@@ -86,21 +86,25 @@ export function CareerFitPage() {
     setError("");
 
     const systemPrompt = `You are an elite technical recruiter and career coach.
-Analyze the provided Job Description (JD) and the candidate's Resume text.
-Your goal is to determine how well the candidate fits the role, identify gaps, and provide actionable advice.
+Scan the ENTIRE Job Description (JD) provided, including the company overview, responsibilities, and qualifications sections. 
+Your task is to identify EVERY SINGLE requirement mentioned—including technical skills, soft skills, leadership qualities (like mentoring), years of experience, and educational requirements.
+
+Compare this exhaustive list of requirements against the candidate's Resume text.
+Identify ALL gaps where the candidate's resume does not explicitly demonstrate or meet the JD's criteria.
+
 Return ONLY a valid JSON object matching this exact structure:
 {
   "fitScore": number (0 to 100),
   "matchSummary": "A brief 2-sentence summary of their overall fit.",
   "missingSkills": [
     {
-      "skill": "Name of the missing or weak skill",
+      "skill": "Name of the missing requirement (e.g., 'Advanced Data Science Modeling', '3+ Years Data Science Exp', 'Mentorship', 'Data Quality Management')",
       "importance": "High" | "Medium" | "Low",
-      "context": "Brief explanation of why the JD requires this"
+      "context": "Briefly state where/why this was mentioned in the JD"
     }
   ],
   "interviewDangerZones": [
-    "A specific, difficult interview question they might struggle with due to their gaps."
+    "A specific, difficult interview question they might struggle with due to their identified gaps."
   ],
   "resumeEnhancements": [
     "A specific, actionable suggestion to reword or improve their resume based on their existing experience to better match the JD."
