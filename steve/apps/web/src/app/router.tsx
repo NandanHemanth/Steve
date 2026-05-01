@@ -10,6 +10,7 @@ import { CourseNewPage } from "../pages/CourseNewPage";
 import { CourseOverviewPage } from "../pages/CourseOverviewPage";
 import { CourseLearnPage } from "../pages/CourseLearnPage";
 import { AcademicHubPage } from "../pages/AcademicHubPage";
+import { CareerFitPage } from "../pages/CareerFitPage";
 
 function RedirectDashboard() {
   return <Navigate to="/app/dashboard" replace />;
@@ -34,6 +35,7 @@ export const router = createBrowserRouter([
       { path: "courses/:courseId", element: <CourseOverviewPage /> },
       { path: "courses/:courseId/learn", element: <CourseLearnPage /> },
       { path: "academic", element: <AcademicHubPage /> },
+      { path: "career-fit", element: <CareerFitPage /> },
       { path: "academic/planner", element: <Navigate to="/app/academic" replace /> },
       { path: "calendar", element: <RedirectDashboard /> },
       { path: "calendar/*", element: <RedirectDashboard /> },

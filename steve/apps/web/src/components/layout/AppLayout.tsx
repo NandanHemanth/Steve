@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { BookOpen, GraduationCap, LayoutDashboard, LogOut, Settings, User, X } from "lucide-react";
+import { BookOpen, GraduationCap, LayoutDashboard, LogOut, Settings, User, X, Target } from "lucide-react";
 import { useAuth } from "../auth/useAuth";
 import { SteveLogo } from "../branding/SteveLogo";
 
@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { to: "/app/courses/new", icon: BookOpen, label: "AI Tutor" },
   { to: "/app/academic", icon: GraduationCap, label: "Course Planner" },
   { to: "/app/profile", icon: User, label: "My Profile" },
+  { to: "/app/career-fit", icon: Target, label: "Career Fit" },
   { to: "/app/settings", icon: Settings, label: "Settings" }
 ] as const;
 
