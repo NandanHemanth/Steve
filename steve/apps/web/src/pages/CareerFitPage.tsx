@@ -125,9 +125,12 @@ Return ONLY a valid JSON object matching this exact structure:
   };
 
   const handleLearnSkill = (skill: string) => {
-    // Redirect to course builder with pre-filled prompt
-    const prompt = `Create a crash course on ${skill} tailored for someone applying to a job that requires it. Focus on practical application and interview readiness.`;
-    navigate(`/app/courses/new?prompt=${encodeURIComponent(prompt)}`);
+    // Redirect to course builder with pre-filled details
+    const prompt = `Create a comprehensive crash course on ${skill}. \n\nGoal: Bridge a skill gap for a professional job application.\nFocus: Practical application, key concepts, and interview readiness.`;
+    const title = `Mastering ${skill}`;
+    const subject = "Career Bridge";
+    
+    navigate(`/app/courses/new?title=${encodeURIComponent(title)}&subject=${encodeURIComponent(subject)}&prompt=${encodeURIComponent(prompt)}`);
   };
 
   return (

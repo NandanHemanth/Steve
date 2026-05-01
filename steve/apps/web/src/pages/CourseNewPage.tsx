@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "../components/ui/Button";
 import { FileText, UploadCloud } from "lucide-react";
@@ -111,6 +111,18 @@ export function CourseNewPage() {
       if (pdfObjectUrl) URL.revokeObjectURL(pdfObjectUrl);
     };
   }, [pdfObjectUrl]);
+
+  // Handle URL pre-fills (from Career Fit Bridge)
+  const [searchParams] = useSearchParams();
+  useEffect(() => {
+    const titleParam = searchParams.get("title");
+    const subjectParam = searchParams.get("subject");
+    const promptParam = searchParams.get("prompt");
+
+    if (titleParam) setTitle(titleParam);
+    if (subjectParam) setSubject(subjectParam);
+    if (promptParam) setSyllabus(promptParam);
+  }, [searchParams]);
 
   const effectiveWeeks = autopilot ? defaults.suggestedWeeks : weeks;
   const effectiveHours = autopilot ? defaults.suggestedHours : hoursPerWeek;
