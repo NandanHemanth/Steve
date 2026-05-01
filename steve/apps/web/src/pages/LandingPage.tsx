@@ -100,51 +100,65 @@ export function LandingPage() {
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <motion.div
-              {...fadeUp(0)}
-              className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/50 px-4 py-1.5 text-xs font-bold text-[#0056D2] uppercase tracking-wider mb-8"
-            >
-              <Sparkles className="h-3.5 w-3.5" />
-              Revolutionizing Student Success
-            </motion.div>
-            
-            <motion.h1 
-              {...fadeUp(0.1)}
-              className="text-5xl font-[900] tracking-tight text-slate-900 sm:text-7xl lg:text-[5.5rem] leading-[1.05]"
-            >
-              The AI Operating System <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0056D2] via-[#4F46E5] to-[#8B5CF6]">
-                for Every Stevens Student.
-              </span>
-            </motion.h1>
-            
-            <motion.p 
-              {...fadeUp(0.2)}
-              className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-slate-600"
-            >
-              STEVE isn't just a tutor. It's a career-matching, course-planning, and emotion-aware 
-              intelligence suite built specifically for the Stevens Institute of Technology.
-            </motion.p>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div className="text-left order-2 lg:order-1">
+              <motion.div
+                {...fadeUp(0)}
+                className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/50 px-4 py-1.5 text-xs font-bold text-[#0056D2] uppercase tracking-wider mb-8"
+              >
+                <Sparkles className="h-3.5 w-3.5" />
+                Revolutionizing Student Success
+              </motion.div>
+              
+              <motion.h1 
+                {...fadeUp(0.1)}
+                className="text-5xl font-[900] tracking-tight text-slate-900 sm:text-7xl lg:text-[5.5rem] leading-[1.05]"
+              >
+                The AI Operating System <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0056D2] via-[#4F46E5] to-[#8B5CF6]">
+                  for Every Stevens Student.
+                </span>
+              </motion.h1>
+              
+              <motion.p 
+                {...fadeUp(0.2)}
+                className="mt-8 max-w-2xl text-xl leading-relaxed text-slate-600"
+              >
+                STEVE isn't just a tutor. It's a career-matching, course-planning, and emotion-aware 
+                intelligence suite built specifically for the Stevens Institute of Technology.
+              </motion.p>
 
-            <motion.div 
-              {...fadeUp(0.3)}
-              className="mt-12 flex flex-wrap items-center justify-center gap-5"
-            >
-              <Link
-                to="/login"
-                className="group relative inline-flex items-center gap-3 rounded-full bg-slate-900 px-8 py-4 text-lg font-bold text-white transition-all hover:bg-black hover:scale-105 active:scale-95 shadow-xl shadow-slate-900/20"
+              <motion.div 
+                {...fadeUp(0.3)}
+                className="mt-12 flex flex-wrap items-center gap-5"
               >
-                Launch Steve 🚀
-                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link
-                to="/app/dashboard"
-                className="inline-flex items-center gap-3 rounded-full border-2 border-slate-200 bg-white px-8 py-4 text-lg font-bold text-slate-900 transition-all hover:border-slate-900 hover:bg-slate-50"
+                <Link
+                  to="/login"
+                  className="group relative inline-flex items-center gap-3 rounded-full bg-slate-900 px-8 py-4 text-lg font-bold text-white transition-all hover:bg-black hover:scale-105 active:scale-95 shadow-xl shadow-slate-900/20"
+                >
+                  Launch Steve 🚀
+                  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Link>
+                <Link
+                  to="/app/dashboard"
+                  className="inline-flex items-center gap-3 rounded-full border-2 border-slate-200 bg-white px-8 py-4 text-lg font-bold text-slate-900 transition-all hover:border-slate-900 hover:bg-slate-50"
+                >
+                  Explore the Hub
+                </Link>
+              </motion.div>
+            </div>
+
+            <div className="flex justify-center lg:justify-end order-1 lg:order-2 mb-12 lg:mb-0">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+                animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                className="relative"
               >
-                Explore the Hub
-              </Link>
-            </motion.div>
+                <div className="absolute inset-0 -m-20 rounded-full bg-blue-400/10 blur-[120px] animate-pulse" />
+                <SteveLogo variant="hero" className="relative drop-shadow-[0_32px_64px_rgba(0,86,210,0.25)] scale-[1.2] sm:scale-[1.5] lg:scale-[1.9] xl:scale-[2.1] transition-transform duration-500 hover:scale-[2.2]" />
+              </motion.div>
+            </div>
           </div>
 
           {/* Large Dashboard Mockup */}
