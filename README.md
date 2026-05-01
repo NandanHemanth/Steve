@@ -120,6 +120,11 @@ Feel free to contribute by:
 - Adding new learning widget types
 - Enhancing the story mode functionality
 
+## Team 
+- Sarang Rajesh Sakhare
+- Nandan Hemanth
+- Abhishek Mishra
+
 ## 📜 License
 
 This project is open source and available under the MIT License.
