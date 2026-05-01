@@ -1,0 +1,12 @@
+opencv-python
+numpy
+mediapipe
+deepface
+pandas
+matplotlib
+seaborn
+plotly
+tf-keras
+reportlab
+flask
+flask-cors

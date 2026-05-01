@@ -1,0 +1,928 @@
+{
+  "programs": {
+    "MS_Business_Intelligence_and_Analytics": {
+      "degree": "Master of Science",
+      "program": "Business Intelligence and Analytics (BIA)",
+      "catalog_year": "2023-2024",
+      "department": "School of Business",
+      "url": "https://web.stevens.edu/catalog/archive/2023-2024/en/catalog/academic-catalog/school-of-business/graduate-programs/master-of-science-in-business-intelligence-and-analytics-bia.html",
+      "total_credits_required": 33,
+      "concentrations": ["Data Analytics", "Data Science and AI", "Big Data"],
+      "degree_requirements": {
+        "total_credits": 33,
+        "minimum_gpa": 3.0,
+        "breakdown": {
+          "core": {
+            "courses_required": 11,
+            "note": "All 11 core courses are required (BIA 580, FIN 515, MIS 631, MIS 632, MIS 633, MIS 634, MIS 637, BIA 650, BIA 652, BIA 654, BIA 686)"
+          },
+          "concentration_electives": {
+            "credits_required": 6,
+            "courses_required": 2,
+            "note": "Choose 2 courses from exactly one concentration: Data Analytics, Data Science and AI, or Big Data"
+          }
+        },
+        "concentration_specific_rules": {
+          "big_data": "BIA 678 (Big Data Technologies) is mandatory; choose 2 additional from the Data Science and AI concentration electives",
+          "data_analytics": "Choose any 3 from the Data Analytics concentration elective pool",
+          "data_science_and_ai": "Choose any 3 from the Data Science and AI concentration elective pool"
+        },
+        "notes": "Students must maintain a minimum cumulative GPA of 3.0 to graduate"
+      },
+      "course_pools": {
+        "core": {
+          "description": "Required for all students (11 courses, 33 credits)",
+          "courses": [
+            {
+              "code": "BIA 580",
+              "name": "Foundations of Business Analytics",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Not specified",
+              "description": "Prepares students for advanced business analytics by covering major mathematical and statistical concepts including Linear Algebra, Differential Calculus, and Probability and Statistics. Bridges theory and practice through business applications drawn from Digital Marketing, Finance, and Economics. Python is utilized throughout for examples and assignments.",
+              "prerequisites": "None specified"
+            },
+            {
+              "code": "FIN 515",
+              "name": "Financial Decision Making",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Surveys accounting and finance methods to equip technical executives with skills for effective decisions that maximize shareholder value. Bridges accounting analysis of past performance with financial projections of future economic impacts.",
+              "prerequisites": "Graduate student status or at least junior standing"
+            },
+            {
+              "code": "MIS 631",
+              "name": "Data Management",
+              "credits": 2,
+              "distribution": "School of Business",
+              "typically_offered": "Must be taken with MIS 632 in same semester",
+              "description": "Focuses on data and database management, with emphasis on modeling and design and their application to business decision making. Provides conceptual understanding of both organizational and technical issues associated with data. Topics include normalization, entity-relationship modeling, relational database design, SQL, DDL, master data management, NoSQL databases (MongoDB), and cloud computing.",
+              "prerequisites": "None specified; co-requisite MIS 632"
+            },
+            {
+              "code": "MIS 632",
+              "name": "Data Management LAB",
+              "credits": 1,
+              "distribution": "School of Business",
+              "typically_offered": "Must be taken with MIS 631 in same semester",
+              "description": "Provides hands-on experience in designing, implementing, and querying databases using ERWIN (data modeling), PostgreSQL, SQL, and MongoDB.",
+              "prerequisites": "Co-requisite MIS 631"
+            },
+            {
+              "code": "MIS 633",
+              "name": "Business Intelligence & Data Integration",
+              "credits": 2,
+              "distribution": "School of Business",
+              "typically_offered": "Must be taken with MIS 634 in same semester",
+              "description": "Focuses on the design and management of data warehouse (DW) and business intelligence (BI) systems. Organized around: business value of data, planning and business requirements, architecture, data design, implementation, BI, deployment, data integration, and emerging issues.",
+              "prerequisites": "None specified; co-requisite MIS 634"
+            },
+            {
+              "code": "MIS 634",
+              "name": "Business Intelligence & Data Integration - LAB",
+              "credits": 1,
+              "distribution": "School of Business",
+              "typically_offered": "Must be taken with MIS 633 in same semester",
+              "description": "Provides hands-on experience in designing, implementing, and querying data warehouses and large-scale database systems using Alteryx (ETL tool), ERWIN (data modeling), and MongoDB.",
+              "prerequisites": "Co-requisite MIS 633"
+            },
+            {
+              "code": "MIS 637",
+              "name": "Data Analytics and Machine Learning",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Examines Data Mining and Knowledge Discovery Algorithms and their applications in solving real world business and operation problems. Covers data preprocessing, k-nearest neighborhood algorithms, machine learning and decision trees, artificial neural networks, clustering, and evaluation techniques.",
+              "prerequisites": "None specified"
+            },
+            {
+              "code": "BIA 650",
+              "name": "Optimization and Process Analytics",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester",
+              "description": "Addresses basic concepts in optimization and heuristic search with emphasis on process improvement. Students apply mathematical optimization models to healthcare, logistics, supply chain management, capital budgeting, and portfolio analysis. Uses Microsoft Excel's Solver add-on.",
+              "prerequisites": "None specified"
+            },
+            {
+              "code": "BIA 652",
+              "name": "Multivariate Data Analysis I",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Introduces multivariate analysis methods through R programming. Students master techniques including principal components analysis, factor analysis, structural equation modeling, multidimensional scaling, correspondence analysis, cluster analysis, MANOVA, discriminant function analysis, and logistic regression. Emphasizes data visualization and presenting analytical findings.",
+              "prerequisites": "None specified"
+            },
+            {
+              "code": "BIA 654",
+              "name": "Experimental Design II",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester",
+              "description": "Addresses core experimentation concepts including hypothesis creation, operational definitions, reliability and validity, and measurement techniques. Covers design methodologies such as sampling, randomization, and counterbalancing. Students complete a capstone project involving research question development, experimental design, data collection and analysis.",
+              "prerequisites": "MGT 620 or equivalent; basic knowledge of statistics expected"
+            },
+            {
+              "code": "BIA 686",
+              "name": "Practicum in Analytics",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Emphasizes leveraging business intelligence and analytics for effective decision-making. Students apply concepts, principles, and methods associated with four areas of analytics (texts, descriptive, predictive, and prescriptive) to real problems in an application domain associated with their area of interest.",
+              "prerequisites": "None listed"
+            }
+          ]
+        },
+        "data_analytics_concentration_electives": {
+          "description": "Choose 3 courses for Data Analytics Concentration",
+          "courses": [
+            {
+              "code": "BIA 658",
+              "name": "Social Network Analytics and Visualization",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Introduces foundational concepts in social network analysis with practical applications. Explores graph-theoretic fundamentals, centrality, cohesion, affiliations, equivalence, and roles. Examines marketing applications including customer profiling, community detection, targeting, sentiment analysis, and development of recommendation systems.",
+              "prerequisites": "Not explicitly listed; requires prior R, Python, machine learning knowledge"
+            },
+            {
+              "code": "BIA 668",
+              "name": "Management of AI Technologies",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester",
+              "description": "Examines how artificial intelligence applications function across business contexts. Covers autonomous transportation, fraud detection, machine translation, meeting scheduling, and face recognition. Focuses on management considerations including fairness, accountability, transparency, ethics, and legal implications within AI projects.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "BIA 672",
+              "name": "Marketing Analytics",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester",
+              "description": "Explores marketing analytics techniques including segmentation, positioning, and forecasting. Emphasizes real-world application through case studies and actual company data. Students analyze datasets and develop strategic recommendations based on their findings.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "BIA 674",
+              "name": "Supply Chain Analytics",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Summer Session 1",
+              "description": "Explores data-driven decision-making in supply chain management. Addresses strategic and operational aspects including supplier analytics, capacity planning, demand-supply matching, sales and operations planning, location analysis, network management, inventory management, and sourcing. Covers predictive, descriptive, and prescriptive analytics methodologies.",
+              "prerequisites": "Not specified"
+            }
+          ]
+        },
+        "data_science_and_ai_concentration_electives": {
+          "description": "Choose 3 courses for Data Science and AI Concentration",
+          "courses": [
+            {
+              "code": "BIA 656",
+              "name": "Advanced Data Analytics and Machine Learning",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester",
+              "description": "Teaches systematic analytical approaches to corporate data through statistical learning algorithms. Covers time series and statistical and graphical models used for inference and prediction, with applications in finance, marketing, operations, and biomedicine.",
+              "prerequisites": "Graduate student status AND completion of BIA 652 or MGT 620; foundational knowledge in probability theory and linear algebra"
+            },
+            {
+              "code": "BIA 660",
+              "name": "Web Mining",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Teaches students to extract data from the web and analyze web-scale data using distributed computing. Explores analytical methods used by major tech companies and startups, culminating in applying these techniques to address research questions or develop web applications.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "BIA 676",
+              "name": "Data Stream Analytics",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Spring Semester",
+              "description": "Introduces the emerging field of data streams analytics, addressing challenges posed by continuously growing datasets from sensors, RFID tags, and smart devices. Explores IoT architecture, data quality issues, and methodologies for analyzing real-time data. Topics include synopsis and sampling techniques, sliding windows, computing entropy in streams, data stream correlations, change detection, outliers and anomaly detection.",
+              "prerequisites": "MIS 637"
+            },
+            {
+              "code": "BIA 678",
+              "name": "Big Data Technologies",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Addresses the emerging field of Big Data through established BI techniques and innovative approaches to managing data's volume, velocity, and variety. Covers technological, managerial, governance, and organizational dimensions of data-centric work.",
+              "prerequisites": "Prior experience in multivariate statistics, data mining, data management, and programming",
+              "cross_listed": "EMT 678"
+            },
+            {
+              "code": "BIA 679",
+              "name": "Big Data Practicum",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Semester",
+              "description": "Trains students to think critically about the process, tools, techniques, technologies, and governance for an entire data pipeline, from data through application. Students work with real-world data and business scenarios to create case studies, develop complete data pipelines, and document projects with detailed reports.",
+              "prerequisites": "One of: MIS 631, MIS 632, MIS 633, MIS 634, MIS 637, or BIA 652 — OR instructor permission"
+            }
+          ]
+        },
+        "big_data_concentration_required": {
+          "description": "BIA 678 is required for Big Data Concentration; select 2 additional from Data Science and AI electives",
+          "rule_note": "Select BIA 678 plus any 2 courses from data_science_and_ai_concentration_electives to fulfill the Big Data concentration (3 courses total)",
+          "courses": [
+            {
+              "code": "BIA 678",
+              "name": "Big Data Technologies",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Addresses the emerging field of Big Data through established BI techniques and innovative approaches to managing data's volume, velocity, and variety. Covers technological, managerial, governance, and organizational dimensions of data-centric work.",
+              "prerequisites": "Prior experience in multivariate statistics, data mining, data management, and programming"
+            }
+          ]
+        },
+        "additional_electives": {
+          "description": "Additional elective courses available for selection",
+          "courses": [
+            {
+              "code": "BIA 662",
+              "name": "Augmented Intelligence and Generative AI",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester",
+              "description": "Examines cognitive computing and its implications for big data analytics and evidence-based decision making. Topics include cognitive computing design principles, natural language processing, knowledge representation, advanced analytics, IBM Watson DeepQA, and Google TensorFlow deep learning frameworks. Students develop cognitive applications and analyze how knowledge-based AI and deep learning influence data science.",
+              "prerequisites": "None listed"
+            },
+            {
+              "code": "BIA 664",
+              "name": "Management of the Data Resource",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Not specified",
+              "description": "Designed to explain and demystify big data in non-technical terms, bridging the gap between market buzz and business realities. Examines practical implementations and financial returns on big data investments, analyzes both successful and unsuccessful applications, and reduces complex concepts to essential managerial knowledge for informed decision-making.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "BIA 667",
+              "name": "Introduction to Deep Learning and Business Applications",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester",
+              "description": "Introduces deep learning fundamentals tailored for business students. Progresses from basic constructs of neural networks through advanced models including convolutional neural networks, recurrent networks, generative models, and reinforcement learning. Examines potential implications and risks of applying deep learning in the business world.",
+              "prerequisites": "MIS 637 (or equivalent) AND BIA 660"
+            },
+            {
+              "code": "BIA 670",
+              "name": "Risk Management and Simulation",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Fall Semester, Spring Semester",
+              "description": "Explores theoretical and practical aspects of risk assessment and management. Covers innovation in competitive environments, uncertainty analysis, decision trees, binomial methods, Black-Scholes option pricing, real options methodology, VAR (value at risk), and risk assessment frameworks.",
+              "prerequisites": "CS 505 or NIS 505/TM 605"
+            },
+            {
+              "code": "BIA 680",
+              "name": "Applied Analytics in the Life Sciences",
+              "credits": 3,
+              "distribution": "School of Business",
+              "typically_offered": "Not specified",
+              "description": "Capstone course integrating key elements from the BIA program. Students apply learned concepts, principles, and methods to authentic challenges within their chosen application domain. Culminates in a poster session where students present projects for feedback from industry practitioners in pharmaceutical and life sciences.",
+              "prerequisites": "Not specified"
+            }
+          ]
+        }
+      }
+    },
+
+    "ME_Robotics": {
+      "degree": "Master of Engineering",
+      "program": "Robotics",
+      "catalog_year": "2024-2025",
+      "department": "Department of Mechanical Engineering",
+      "url": "https://web.stevens.edu/catalog/archive/2024-2025/en/catalog/academic-catalog/department-of-mechanical-engineering/graduate-programs/master-of-engineering-in-robotics.html",
+      "total_credits_required": 30,
+      "degree_requirements": {
+        "total_credits": 30,
+        "minimum_grade": "B average required across all courses",
+        "breakdown": {
+          "engineering_tools_and_methods": {
+            "credits_required": 3,
+            "courses_required": 1,
+            "note": "Select 1 course from the Engineering Tools and Methods pool (ME 564, 594, 635, 641, or 651)"
+          },
+          "robotics_core": {
+            "credits_required": 9,
+            "courses_required": 3,
+            "note": "Select 3 courses from the M.E. Robotics Core pool (ME 598, 621, 650, 655, or 656)"
+          },
+          "electives": {
+            "credits_required": 18,
+            "courses_required": 6,
+            "breakdown": {
+              "me_robotics_electives": {
+                "minimum_courses": 2,
+                "note": "At least 2 courses from ME Robotics Elective pool"
+              },
+              "cs_ee_cpe_ma_electives": {
+                "minimum_courses": 2,
+                "note": "At least 2 courses from CS, EE, CPE, or MA elective pool"
+              },
+              "flexible": {
+                "courses_required": 2,
+                "note": "Remaining 2 courses from any elective pool, or from School of Engineering and Science (may be outside listed offerings with advisor approval)"
+              }
+            }
+          }
+        },
+        "special_rules": {
+          "me_702_practicum": "ME 702 counts as an elective only if taken three times (3 credits total); a single enrollment counts for extra credit beyond the required 30",
+          "thesis_or_project": "Students may substitute ME 800 (Special Problems, 3 cr) or ME 900 (Thesis, 3 cr) for an equivalent number of elective courses"
+        }
+      },
+      "course_pools": {
+        "engineering_tools_and_methods": {
+          "description": "Engineering Tools and Methods Courses — may count as ME Robotics Elective if not used for core requirement",
+          "courses": [
+            {
+              "code": "ME 564",
+              "name": "Optimization Principles in Mechanical Engineering",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Fall Semester, Spring Semester, Summer Session 1",
+              "description": "Application of mathematical optimization techniques, including linear and nonlinear methods, to design and manufacture of devices and systems of interest to mechanical engineers. Optimization techniques include constrained and unconstrained optimization in several variables, problems for structured multi-stage decision, and linear programming. Formulation of design and manufacturing problems using computer-based methods; optimum design of parts and assemblies to minimize the cost of manufacture.",
+              "prerequisites": "Graduate Student or At Least Junior"
+            },
+            {
+              "code": "ME 594",
+              "name": "Numerical Methods in Mechanical Engineering",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Numerical methods applied to mechanical engineering problems.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 635",
+              "name": "Modeling and Simulation",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Modeling and simulation techniques for mechanical engineering systems.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 641",
+              "name": "Engineering Analysis I",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Advanced engineering analysis methods and mathematical techniques for mechanical engineering applications.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 651",
+              "name": "Analytic Dynamics",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Advanced dynamics using analytical mechanics methods including Lagrangian and Hamiltonian formulations.",
+              "prerequisites": "Not specified"
+            }
+          ]
+        },
+        "robotics_core": {
+          "description": "M.E. Robotics Core Courses (required)",
+          "courses": [
+            {
+              "code": "ME 598",
+              "name": "Introduction to Robotics",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Foundational course covering robotics fundamentals including kinematics, dynamics, sensing, actuation, and control of robotic systems.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 621",
+              "name": "Introduction to Modern Control Engineering",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Modern control theory and its application to engineering systems. State-space methods, stability analysis, feedback design, and digital control.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 650",
+              "name": "Robot Manipulators",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Analysis and design of robot manipulators. Topics include forward and inverse kinematics, workspace analysis, trajectory planning, and motion control of robotic arms.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 655",
+              "name": "Wearable Robotics and Sensors",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Design and analysis of wearable robotic systems and sensor technologies. Applications include exoskeletons, prosthetics, and human-robot interaction devices.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 656",
+              "name": "Autonomous Navigation for Mobile Robots",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Methods and algorithms for autonomous navigation of mobile robots. Topics include localization, mapping, SLAM, path planning, and obstacle avoidance.",
+              "prerequisites": "Not specified"
+            }
+          ]
+        },
+        "me_robotics_electives": {
+          "description": "Mechanical Engineering Robotics Elective Courses — choose at least 2",
+          "courses": [
+            {
+              "code": "ME 522",
+              "name": "Mechatronics",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Integration of mechanical, electrical, and computer systems. Topics include sensors, actuators, microcontrollers, signal conditioning, and system integration for electromechanical devices.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 551",
+              "name": "Microprocessor Applications in Mechanical Engineering",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Application of microprocessors and embedded systems to mechanical engineering problems. Programming, interfacing, and real-time control.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 622",
+              "name": "Robust and Adaptive Control for Dynamical Systems",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Advanced control techniques for dynamical systems with uncertainty. Covers robust control design, adaptive algorithms, and their application to robotic and mechanical systems.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 631",
+              "name": "Mechanical Vibrations",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Analysis of vibrating mechanical systems. Single and multi-degree-of-freedom systems, free and forced response, vibration isolation, and modal analysis.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 685",
+              "name": "Mobile Microrobotic Systems",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Design, fabrication, and control of mobile microrobotic systems. Covers actuation mechanisms, power delivery, sensing, and locomotion at the micro scale.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 702",
+              "name": "Practicum in Mechanical Engineering",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Practical engineering experience in mechanical engineering. Counts as an elective course if taken three times; otherwise counts for extra credit beyond the required 30 credits.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 800",
+              "name": "Special Problems in Mechanical Engineering",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Independent project course in mechanical engineering. Students may substitute this for the appropriate number of regular elective courses.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "ME 900",
+              "name": "Thesis in Mechanical Engineering",
+              "credits": 3,
+              "distribution": "Mechanical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Thesis research in mechanical engineering. Students may substitute this for the appropriate number of regular elective courses.",
+              "prerequisites": "Not specified"
+            }
+          ]
+        },
+        "cs_ee_cpe_ma_electives": {
+          "description": "Computer Science, Electrical/Computer Engineering, and Mathematical Sciences Elective Courses — choose at least 2",
+          "courses": [
+            {
+              "code": "CS 532",
+              "name": "3D Computer Vision",
+              "credits": 3,
+              "distribution": "Computer Science Program",
+              "typically_offered": "Not specified",
+              "description": "Three-dimensional computer vision techniques including stereo vision, structure from motion, 3D reconstruction, and depth sensing.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CS 541",
+              "name": "Artificial Intelligence",
+              "credits": 3,
+              "distribution": "Computer Science Program",
+              "typically_offered": "Not specified",
+              "description": "Fundamental concepts and techniques in artificial intelligence including search, knowledge representation, reasoning, planning, and machine learning.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CS 558",
+              "name": "Computer Vision",
+              "credits": 3,
+              "distribution": "Computer Science Program",
+              "typically_offered": "Not specified",
+              "description": "Computational methods for interpreting visual information. Topics include image formation, feature detection, segmentation, object recognition, and scene understanding.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CS 559",
+              "name": "Machine Learning: Fundamentals and Applications",
+              "credits": 3,
+              "distribution": "Computer Science Program",
+              "typically_offered": "Not specified",
+              "description": "Fundamental machine learning algorithms and their practical applications. Covers supervised and unsupervised learning, model evaluation, and real-world deployment.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CS 560",
+              "name": "Statistical Machine Learning",
+              "credits": 3,
+              "distribution": "Computer Science Program",
+              "typically_offered": "Not specified",
+              "description": "Statistical foundations of machine learning. Covers probabilistic models, Bayesian methods, statistical inference, and learning theory.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CS 570",
+              "name": "Introduction to Programming, Data Structures, and Algorithms",
+              "credits": 3,
+              "distribution": "Computer Science Program",
+              "typically_offered": "Not specified",
+              "description": "Foundational programming concepts, data structures, and algorithmic problem solving for graduate students.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CS 583",
+              "name": "Deep Learning",
+              "credits": 3,
+              "distribution": "Computer Science Program",
+              "typically_offered": "Not specified",
+              "description": "Deep neural network architectures and training methods. Covers CNNs, RNNs, transformers, and their applications in computer vision and natural language processing.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CS 590",
+              "name": "Algorithms",
+              "credits": 3,
+              "distribution": "Computer Science Program",
+              "typically_offered": "Not specified",
+              "description": "Advanced algorithm design and analysis. Topics include sorting, graph algorithms, dynamic programming, NP-completeness, and approximation algorithms.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CPE 521",
+              "name": "Autonomous Mobile Robotic Systems",
+              "credits": 3,
+              "distribution": "Computer Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Design and implementation of autonomous mobile robotic systems. Covers perception, planning, and control for ground and aerial robots.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "CPE 595",
+              "name": "Applied Machine Learning",
+              "credits": 3,
+              "distribution": "Computer Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Practical machine learning methods and tools applied to engineering problems. Hands-on experience with real datasets and industry-relevant applications.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "EE 551",
+              "name": "Engineering Programming: Python",
+              "credits": 3,
+              "distribution": "Electrical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Python programming for engineering applications. Covers scientific computing, data analysis, simulation, and engineering problem solving with Python.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "EE 553",
+              "name": "Engineering Programming: C++",
+              "credits": 3,
+              "distribution": "Electrical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "C++ programming for engineering applications. Covers object-oriented design, memory management, performance optimization, and real-time systems programming.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "EE 621",
+              "name": "Nonlinear Control",
+              "credits": 3,
+              "distribution": "Electrical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Analysis and design of nonlinear control systems. Covers Lyapunov stability, feedback linearization, sliding mode control, and applications to robotic systems.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "EE 631",
+              "name": "Cooperating Autonomous Mobile Robots",
+              "credits": 3,
+              "distribution": "Electrical Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Multi-robot systems and cooperative autonomy. Topics include distributed sensing, communication, coordination algorithms, and swarm robotics.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "MA 655",
+              "name": "Optimal Control Theory",
+              "credits": 3,
+              "distribution": "Mathematical Sciences Program",
+              "typically_offered": "Not specified",
+              "description": "Mathematical theory of optimal control. Covers Pontryagin's maximum principle, Hamilton-Jacobi-Bellman equation, and applications to engineering systems.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "MA 661",
+              "name": "Dynamic Programming and Reinforcement Learning",
+              "credits": 3,
+              "distribution": "Mathematical Sciences Program",
+              "typically_offered": "Not specified",
+              "description": "Dynamic programming principles and reinforcement learning algorithms. Covers Bellman equations, value iteration, policy gradient methods, and applications to sequential decision making.",
+              "prerequisites": "Not specified"
+            }
+          ]
+        }
+      }
+    },
+
+    "MS_Applied_Artificial_Intelligence": {
+      "degree": "Master of Science",
+      "program": "Applied Artificial Intelligence",
+      "catalog_year": "2024-2025",
+      "department": "Department of Electrical and Computer Engineering",
+      "url": "https://web.stevens.edu/catalog/archive/2024-2025/en/catalog/academic-catalog/department-of-electrical-and-computer-engineering/graduate-programs/master-of-science-in-applied-artificial-intelligence.html",
+      "total_credits_required": 30,
+      "concentrations": [
+        "Electrical Engineering",
+        "Computer Engineering",
+        "Data Engineering",
+        "Software Engineering",
+        "Biomedical Engineering",
+        "Systems Biology",
+        "Mechanical Engineering",
+        "Artificial Intelligence in Design and Construction"
+      ],
+      "degree_requirements": {
+        "total_credits": 30,
+        "breakdown": {
+          "mathematical_foundation": {
+            "credits_required": 3,
+            "courses_required": 1,
+            "note": "Select 1 course: EE 602 (Analytical Methods) OR EE 605 (Probability and Stochastic Processes I)"
+          },
+          "core": {
+            "credits_required": 12,
+            "courses_required": 4,
+            "note": "Select 4 courses from the core pool (AAI 595, AAI 646, EE 608, AAI 627, AAI 628, AAI 672)"
+          },
+          "concentration": {
+            "credits_required": 9,
+            "courses_required": 3,
+            "note": "Select 3 courses from one of the 8 concentration areas"
+          },
+          "project_or_thesis": {
+            "credits_required": 6,
+            "tracks": {
+              "project_track": {
+                "credits": 6,
+                "components": [
+                  "AAI 800 Project Course (3 credits)",
+                  "EE 820 Research Seminar (0 credits, co-requisite)",
+                  "1 elective at 500/600 level (3 credits, from department or external with advisor approval)"
+                ]
+              },
+              "thesis_track": {
+                "credits": 6,
+                "components": [
+                  "3 credits thesis in third semester",
+                  "3 credits thesis in fourth semester",
+                  "EE 820 Research Seminar (0 credits, co-requisite)"
+                ]
+              }
+            }
+          }
+        },
+        "credit_summary": {
+          "mathematical_foundation": 3,
+          "core": 12,
+          "concentration": 9,
+          "project_or_thesis": 6,
+          "total": 30
+        },
+        "notes": "Electives in the project track can be from the department or external courses with advisor approval"
+      },
+      "course_pools": {
+        "mathematical_foundation": {
+          "description": "Select 1 foundation course",
+          "courses": [
+            {
+              "code": "EE 602",
+              "name": "Analytical Methods in Electrical Engineering",
+              "credits": 3,
+              "distribution": "Electrical and Computer Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Advanced mathematical methods for electrical engineering including linear algebra, differential equations, transform methods, and numerical analysis.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "EE 605",
+              "name": "Probability and Stochastic Processes I",
+              "credits": 3,
+              "distribution": "Electrical and Computer Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Probability theory and stochastic processes for engineering applications. Covers random variables, distributions, expectation, and introduction to random processes.",
+              "prerequisites": "Not specified"
+            }
+          ]
+        },
+        "core": {
+          "description": "Select 4 core courses",
+          "courses": [
+            {
+              "code": "AAI 595",
+              "name": "Applied Machine Learning",
+              "credits": 3,
+              "distribution": "Applied Artificial Intelligence Program",
+              "typically_offered": "Not specified",
+              "description": "Practical machine learning methods including supervised and unsupervised learning, model selection, regularization, and deployment for real-world engineering applications.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "AAI 646",
+              "name": "Pattern Recognition and Classification",
+              "credits": 3,
+              "distribution": "Applied Artificial Intelligence Program",
+              "typically_offered": "Not specified",
+              "description": "Statistical and machine learning approaches to pattern recognition and classification. Covers Bayesian classifiers, discriminant analysis, neural networks, and performance evaluation.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "EE 608",
+              "name": "Applied Modeling and Optimization",
+              "credits": 3,
+              "distribution": "Electrical and Computer Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Mathematical modeling and optimization techniques applied to engineering systems. Covers linear programming, nonlinear optimization, and convex optimization with engineering applications.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "AAI 627",
+              "name": "Data Acquisition, Modeling and Analysis: Big Data Analytics",
+              "credits": 3,
+              "distribution": "Applied Artificial Intelligence Program",
+              "typically_offered": "Not specified",
+              "description": "Big data analytics methods for large-scale data acquisition, processing, and analysis. Covers distributed computing frameworks, data pipelines, and scalable machine learning.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "AAI 628",
+              "name": "Data Acquisition, Modeling and Analysis: Deep Learning",
+              "credits": 3,
+              "distribution": "Applied Artificial Intelligence Program",
+              "typically_offered": "Not specified",
+              "description": "Deep learning for data acquisition and modeling. Covers neural network architectures, training techniques, and applications to real-world datasets.",
+              "prerequisites": "Not specified"
+            },
+            {
+              "code": "AAI 672",
+              "name": "Applied Game Theory and Evolutionary Algorithms",
+              "credits": 3,
+              "distribution": "Applied Artificial Intelligence Program",
+              "typically_offered": "Not specified",
+              "description": "Game theory principles and evolutionary computation applied to AI problems. Covers Nash equilibria, multi-agent systems, genetic algorithms, and optimization.",
+              "prerequisites": "Not specified"
+            }
+          ]
+        },
+        "concentration_courses": {
+          "description": "Select 3 courses from chosen concentration",
+          "electrical_engineering": {
+            "courses": [
+              {"code": "EE 548", "name": "Digital Signal Processing", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "Digital signal processing theory and applications. Covers discrete-time signals, Z-transform, DFT, FFT, FIR/IIR filter design, and spectral analysis.", "prerequisites": "Not specified"},
+              {"code": "EE 575", "name": "Introduction to Control Theory", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "Fundamentals of feedback control systems. Covers transfer functions, time and frequency domain analysis, stability criteria, and classical controller design.", "prerequisites": "Not specified"},
+              {"code": "EE 582", "name": "Wireless Networking: Architectures, Protocols and Standards", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "Wireless network architectures, protocols, and standards including WiFi, cellular, and IoT communication systems.", "prerequisites": "Not specified"},
+              {"code": "EE 603", "name": "Linear System Theory", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "State-space analysis of linear dynamical systems. Covers controllability, observability, stability, and state feedback design.", "prerequisites": "Not specified"},
+              {"code": "EE 608", "name": "Applied Modeling and Optimization", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "Mathematical modeling and optimization techniques applied to engineering systems.", "prerequisites": "Not specified"},
+              {"code": "EE 609", "name": "Communication Theory", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "Principles of digital and analog communications. Covers modulation, detection, channel capacity, coding, and noise analysis.", "prerequisites": "Not specified"}
+            ]
+          },
+          "computer_engineering": {
+            "courses": [
+              {"code": "CPE 517", "name": "Digital and Computer Systems Architecture", "credits": 3, "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "Computer architecture principles including processor design, memory hierarchy, pipelining, and parallel processing.", "prerequisites": "Not specified"},
+              {"code": "CPE 555", "name": "Real-Time and Embedded Systems", "credits": 3, "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "Design and analysis of real-time and embedded systems. Covers scheduling, operating systems, hardware-software co-design, and reliability.", "prerequisites": "Not specified"},
+              {"code": "CPE 593", "name": "Applied Data Structures and Algorithms", "credits": 3, "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "Data structures and algorithms for engineering applications. Covers trees, graphs, hashing, sorting, and algorithm design paradigms.", "prerequisites": "Not specified"},
+              {"code": "CPE 679", "name": "Computer and Information Networks", "credits": 3, "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "Computer networking principles including TCP/IP, routing, switching, network security, and modern network architectures.", "prerequisites": "Not specified"},
+              {"code": "CPE 690", "name": "Introduction to VLSI Design", "credits": 3, "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "VLSI circuit design methodologies including CMOS logic, layout, simulation, and design automation tools.", "prerequisites": "Not specified"},
+              {"code": "EE 608", "name": "Applied Modeling and Optimization", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "Mathematical modeling and optimization techniques applied to engineering systems.", "prerequisites": "Not specified"}
+            ]
+          },
+          "data_engineering": {
+            "courses": [
+              {"code": "AAI 551", "name": "Engineering Programming: Python", "credits": 3, "distribution": "Applied Artificial Intelligence Program", "typically_offered": "Not specified", "description": "Python programming for AI and data engineering applications. Covers data manipulation, scientific computing, and machine learning libraries.", "prerequisites": "Not specified"},
+              {"code": "AAI 627", "name": "Data Acquisition, Modeling and Analysis: Big Data Analytics", "credits": 3, "distribution": "Applied Artificial Intelligence Program", "typically_offered": "Not specified", "description": "Big data analytics methods for large-scale data acquisition, processing, and analysis.", "prerequisites": "Not specified"},
+              {"code": "AAI 628", "name": "Data Acquisition, Modeling and Analysis: Deep Learning", "credits": 3, "distribution": "Applied Artificial Intelligence Program", "typically_offered": "Not specified", "description": "Deep learning for data acquisition and modeling.", "prerequisites": "Not specified"},
+              {"code": "CPE 593", "name": "Applied Data Structures and Algorithms", "credits": 3, "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "Data structures and algorithms for engineering applications.", "prerequisites": "Not specified"}
+            ]
+          },
+          "software_engineering": {
+            "courses": [
+              {"code": "AAI 551", "name": "Engineering Programming: Python", "credits": 3, "distribution": "Applied Artificial Intelligence Program", "typically_offered": "Not specified", "description": "Python programming for AI and software engineering applications.", "prerequisites": "Not specified"},
+              {"code": "EE 552", "name": "Engineering Programming: Java", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "Java programming for engineering applications. Covers object-oriented design, data structures, and software engineering principles.", "prerequisites": "Not specified"},
+              {"code": "EE 553", "name": "Engineering Programming: C++", "credits": 3, "distribution": "Electrical Engineering Program", "typically_offered": "Not specified", "description": "C++ programming for engineering applications including performance-critical and systems software.", "prerequisites": "Not specified"},
+              {"code": "AAI 627", "name": "Data Acquisition, Modeling and Analysis: Big Data Analytics", "credits": 3, "distribution": "Applied Artificial Intelligence Program", "typically_offered": "Not specified", "description": "Big data analytics methods for large-scale data acquisition, processing, and analysis.", "prerequisites": "Not specified"},
+              {"code": "AAI 628", "name": "Data Acquisition, Modeling and Analysis: Deep Learning", "credits": 3, "distribution": "Applied Artificial Intelligence Program", "typically_offered": "Not specified", "description": "Deep learning for data acquisition and modeling.", "prerequisites": "Not specified"},
+              {"code": "CPE 593", "name": "Applied Data Structures and Algorithms", "credits": 3, "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "Data structures and algorithms for engineering applications.", "prerequisites": "Not specified"},
+              {"code": "CPE 810", "name": "Special Topics in Computer Engineering", "credits": "3-6", "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "Special topics in computer engineering covering emerging areas at the frontier of the field.", "prerequisites": "Not specified"}
+            ]
+          },
+          "biomedical_engineering": {
+            "courses": [
+              {"code": "BME 810", "name": "Special Topics in Biomedical Engineering", "credits": "3-60", "distribution": "Biomedical Engineering Program", "typically_offered": "Not specified", "description": "Special topics in biomedical engineering covering emerging areas in medical technology and bioengineering.", "prerequisites": "Not specified"},
+              {"code": "BME 558", "name": "Introduction to Brain-Machine Interfaces", "credits": 3, "distribution": "Biomedical Engineering Program", "typically_offered": "Not specified", "description": "Principles and applications of brain-machine interfaces. Covers neural signal acquisition, processing, decoding, and feedback for neuroprosthetics.", "prerequisites": "Not specified"},
+              {"code": "BME 504", "name": "Medical Instrumentation and Imaging", "credits": 3, "distribution": "Biomedical Engineering Program", "typically_offered": "Not specified", "description": "Medical instrumentation design and imaging modalities including MRI, CT, ultrasound, and optical imaging systems.", "prerequisites": "Not specified"},
+              {"code": "CPE 585", "name": "Medical Instrumentation and Imaging", "credits": 3, "distribution": "Computer Engineering Program", "typically_offered": "Not specified", "description": "Medical instrumentation and imaging from a computer engineering perspective, covering signal processing and system design.", "prerequisites": "Not specified"}
+            ]
+          },
+          "systems_biology": {
+            "courses": [
+              {"code": "BIO 687", "name": "Molecular Genetics", "credits": 3, "distribution": "Biology Program", "typically_offered": "Not specified", "description": "Advanced molecular genetics covering gene expression, regulation, genomics, and applications to computational biology.", "prerequisites": "Not specified"},
+              {"code": "CH 580", "name": "Biochemistry I - Cellular Metabolism and Regulation", "credits": 3, "distribution": "Chemistry Program", "typically_offered": "Not specified", "description": "Biochemical pathways and regulation of cellular metabolism including enzyme kinetics, metabolic networks, and energy transduction.", "prerequisites": "Not specified"},
+              {"code": "BIO 668", "name": "Computational Biology", "credits": 3, "distribution": "Biology Program", "typically_offered": "Not specified", "description": "Computational approaches to biological problems including sequence analysis, structural biology, systems biology, and bioinformatics.", "prerequisites": "Not specified"}
+            ]
+          },
+          "mechanical_engineering": {
+            "courses": [
+              {"code": "ME 598", "name": "Introduction to Robotics", "credits": 3, "distribution": "Mechanical Engineering Program", "typically_offered": "Not specified", "description": "Foundational course covering robotics fundamentals including kinematics, dynamics, sensing, actuation, and control.", "prerequisites": "Not specified"},
+              {"code": "ME 621", "name": "Introduction to Modern Control Engineering", "credits": 3, "distribution": "Mechanical Engineering Program", "typically_offered": "Not specified", "description": "Modern control theory and its application to engineering systems including state-space methods and feedback design.", "prerequisites": "Not specified"},
+              {"code": "ME 644", "name": "Computer-Integrated Design and Manufacturing", "credits": 3, "distribution": "Mechanical Engineering Program", "typically_offered": "Not specified", "description": "Computer-aided design and manufacturing systems. Covers CAD/CAM, CNC machining, rapid prototyping, and digital manufacturing.", "prerequisites": "Not specified"}
+            ]
+          },
+          "ai_in_design_and_construction": {
+            "courses": [
+              {"code": "OE 511", "name": "Urban Oceanography", "credits": 3, "distribution": "Ocean Engineering Program", "typically_offered": "Not specified", "description": "Oceanography principles applied to urban coastal environments, covering fluid dynamics, environmental impacts, and coastal engineering.", "prerequisites": "Not specified"},
+              {"code": "CM 521", "name": "Leading Construction Organizations", "credits": 3, "distribution": "Construction Management Program", "typically_offered": "Not specified", "description": "Leadership and management principles for construction organizations including project management, team dynamics, and organizational strategy.", "prerequisites": "Not specified"},
+              {"code": "CM 530", "name": "Strategic Responses to Cyclical Environments", "credits": 3, "distribution": "Construction Management Program", "typically_offered": "Not specified", "description": "Strategic management in cyclical industries. Covers market analysis, risk management, and adaptive strategies for construction firms.", "prerequisites": "Not specified"},
+              {"code": "CM 560", "name": "Sustainable Design", "credits": 3, "distribution": "Construction Management Program", "typically_offered": "Not specified", "description": "Sustainable design principles and practices in construction. Covers green building standards, life cycle assessment, and environmental impact reduction.", "prerequisites": "Not specified"}
+            ]
+          }
+        },
+        "project_and_thesis": {
+          "description": "Capstone options",
+          "courses": [
+            {
+              "code": "AAI 800",
+              "name": "Project Course",
+              "credits": 3,
+              "distribution": "Applied Artificial Intelligence Program",
+              "typically_offered": "Not specified",
+              "description": "Capstone project course for MS Applied AI students. Students complete an applied AI project demonstrating mastery of program competencies.",
+              "prerequisites": "Completion of core requirements"
+            },
+            {
+              "code": "EE 820",
+              "name": "Research Seminar",
+              "credits": 0,
+              "distribution": "Electrical and Computer Engineering Program",
+              "typically_offered": "Not specified",
+              "description": "Research seminar co-requisite for thesis track students. Covers research methodology, scientific communication, and emerging topics in electrical and computer engineering.",
+              "prerequisites": "Co-requisite with thesis courses"
+            },
+            {
+              "code": "900-level",
+              "name": "Thesis Courses",
+              "credits": "6 (3+3)",
+              "distribution": "Applied Artificial Intelligence Program",
+              "typically_offered": "Not specified",
+              "description": "Graduate thesis research in applied artificial intelligence. Students conduct original research under faculty supervision and produce a thesis.",
+              "prerequisites": "Advisor approval"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

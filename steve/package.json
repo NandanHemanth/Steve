@@ -1,0 +1,19 @@
+{
+  "name": "steve",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n web,api -c \"#8b5cf6,#22c55e\" \"npm run dev -w @steve/web\" \"npm run dev -w @steve/api\"",
+    "dev:web": "npm run dev -w @steve/web",
+    "dev:api": "npm run dev -w @steve/api",
+    "build": "npm run build -w @steve/web && npm run build -w @steve/api",
+    "start": "npm run start -w @steve/api"
+  },
+  "description": "STEVE - Student Intelligence & Academic Planning Platform",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

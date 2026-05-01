@@ -1,0 +1,8 @@
+.env
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+steve/node_modules/
+steve/apps/web/node_modules/
+steve/packages/*/node_modules/
